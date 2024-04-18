@@ -1,0 +1,56 @@
+body {
+    padding: 2rem;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+/* - MOBILE FIRST -*/
+#lista-de-tarefas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 1rem;
+
+}
+
+/* - MEDIA QUERY -*/
+/*@media(min-width: 1024px){
+    #lista-de-tarefas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}*/
+
+
+
+/* nesting css*/
+/*@media(min-width: 768px){
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media(min-width: 1024px){
+     grid-template-columns: repeat(3, 1fr);
+}*/
+
+.apagando{
+    animation: fadeout 1s;
+}
+
+
+@keyframes fadeout {
+    to { opacity: 0;}
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    p{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
